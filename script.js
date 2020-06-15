@@ -20,6 +20,8 @@ var familyName = prompt("Inserisci il tuo cognome");
 
 var age = prompt("Quanti anni hai?");
 
+console.log(age)
+
   // Dati del viaggio:
 
 var km = prompt("Quanti KM è distante la tua destinazione?");
@@ -30,18 +32,23 @@ var price = km * 0.21;
 
 // ** Mostriamo all'utente il prezzo NON scontato **
 
-document.getElementById('full-price').innerHTML = "La tariffa intera per il tuo percorso é " + price;
+document.getElementById('full-price').innerHTML = "La tariffa intera per il tuo percorso é " + price + " Euro";
 
 // ** Calcolo della scontistica **
 
 if (age < 18) {
-  discount = price / 100 * 20
-  finalPrice = price - discount
+  var discount = price / 100 * 20;
+  var finalPrice = price - discount;
 } else if (age > 65) {
-  discount = price / 100 * 40
-  finalPrice = price - discount
+  var discount = price / 100 * 40;
+  var finalPrice = price - discount;
 } else {
-  finalPrice = price
+  var finalPrice = price;
 }
 
-console.log(finalPrice)
+console.log(discount)
+console.log(finalPrice);
+
+// ** Ora mostriamo il prezzo eventualmente scontato
+
+document.getElementById('full-price').innerHTML = "La tariffa intera per il tuo percorso é " + finalPrice + " Euro";
