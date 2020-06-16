@@ -2,15 +2,59 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>In Carrozza!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/horse.svg">
+    <title>Trasporti Feudali</title>
+
   </head>
+
   <body>
 
-    <h1>Benvenuto!</h1>
+    <header>
+      <div id="welcome">
 
-    <h2 id="full-price"></h2>
+        <h1 class="company"><i class="fas fa-horse-head"></i>Trasporti Feudali<i class="fas fa-horse-head"></i></h1>
 
-    <script type="text/javascript" src="script.js"></script>
+      </div>
+
+      <nav class="container-nav">
+
+        <div class="buttons">
+          <h5><a href="#">Magione</a></h5>
+        </div>
+        <hr>
+        <div class="buttons">
+          <h5><a href="#">Ricerca</a></h5>
+        </div>
+        <hr>
+        <div class="buttons">
+          <h5><a href="#">Carrozze Disponibili</a></h5>
+        </div>
+        <hr>
+        <div class="buttons">
+          <h5><a href="#">Tariffe</a></h5>
+        </div>
+
+      </nav>
+    </header>
+
+    <main>
+      <h2>Benvenuto, cavaliere/nobildonna.<br> Di seguito trovate la vostra pergamena per il trasporto:</h2>
+
+      <h3 id="name"></h3>
+      <h3 id="age"></h3>
+      <h3 id="km"></h3>
+
+      <h3 id="full-price"></h3>
+
+      <h4>(Si informa il gentile cliente che caso di guerre e pestilenze i vostri biglietti non verranno rimborsati)</h4>
+
+      <script src="script.js"></script>
+    </main>
+
 
   </body>
 </html>

@@ -1,0 +1,80 @@
+/* §§§ REGOLE GENERALI §§§ */
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MedievalSharp', cursive;
+  background-image: url("../img/default-pattern.png");
+}
+
+/* §§§ HEADER §§§ */
+
+header {
+  height: 350px;
+  width: 100%;
+}
+
+#welcome {
+  height: 100%;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  border: 10px solid black;
+  background-image: url("../img/wagon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 20%;
+  position: relative;
+}
+
+.company {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  color: rgb(179, 0, 0);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 100px;
+  text-shadow: 10px 10px 8px white;
+}
+
+.company i {
+  padding: 0 15px 0 15px;
+  color: rgb(31, 31, 20);
+}
+
+  /* §§ Navbar §§ */
+
+  .container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(31, 31, 20, 0.5);
+    border-radius: 0 0 15px 15px;
+  }
+
+  .container-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+
+/* §§§ MAIN §§§ */
+
+main {
+  width: 80%;
+  margin: 150px 10% 0 10%;
+  background-color: rgba(255, 166, 77, 0.5)
+  border: 7px solid black;
+}
+
+main h2 {
+  margin-bottom: 30px;
+}
